@@ -1,0 +1,52 @@
+
+<html>
+<head>
+    <title>Hospital Expert System</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: rgba(245, 244, 244, 0.133);
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        h3 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Hospital Expert System</h2>
+
+    <form method="POST">
+        <input name="symptom"
+               placeholder="Enter symptom" required>
+
+        <button type="submit">Check</button>
+    </form>
+
+    <h3>Result: {{ result }}</h3>
+
+</body>
+</html>
